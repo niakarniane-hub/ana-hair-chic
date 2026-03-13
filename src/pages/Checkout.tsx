@@ -9,7 +9,9 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { formatXof, formatEur } from "@/lib/format";
 import { Check, ChevronLeft, ShoppingBag, Loader2 } from "lucide-react";
-import type { DeliveryZone, PaymentMethod } from "@/integrations/supabase/types";
+import type { Database } from "@/integrations/supabase/types";
+type DeliveryZone = Database["public"]["Enums"]["delivery_zone"];
+type PaymentMethod = Database["public"]["Enums"]["payment_method"];
 
 // ── STEP 1 SCHEMA ──
 const step1Schema = z.object({
