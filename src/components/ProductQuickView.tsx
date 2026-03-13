@@ -190,8 +190,8 @@ const ProductQuickView: React.FC<Props> = ({ product, imageUrl, onClose }) => {
             <button
               onClick={handleAdd}
               disabled={!selectedLength || selectedLength.stock === 0}
-              className={`w-full btn-luxury text-sm ${
-                addedFeedback ? "bg-green-700 text-cream" : "btn-primary"
+            className={`w-full btn-luxury text-sm ${
+                addedFeedback ? "bg-[hsl(142,72%,29%)] text-cream" : "btn-primary"
               } disabled:opacity-40 disabled:cursor-not-allowed`}
             >
               <ShoppingBag size={15} />

@@ -23,6 +23,7 @@ interface Product {
   description_fr: string | null;
   description_en: string | null;
   image_url: string | null;
+  images: string[];
   is_featured: boolean;
   product_lengths: ProductLength[];
 }
